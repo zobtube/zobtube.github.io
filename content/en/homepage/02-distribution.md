@@ -20,5 +20,5 @@ If an architecture / operating system seems to be missing, feel free to request 
 `zobtube` is also available using Docker images, give it a try!
 
 ```
-docker run -it -p 8080:8080 ghcr.io/zobtube/zobtube:0.1.68
+docker run -it -p 8080:8080 ghcr.io/zobtube/zobtube
 ```

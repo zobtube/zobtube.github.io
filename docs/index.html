@@ -257,7 +257,7 @@
 <p>Those binaries are available on the <a href="https://github.com/zobtube/zobtube/releases/latest">Github release page</a>.</p>
 <p>If an architecture / operating system seems to be missing, feel free to request it on the <a href="https://github.com/zobtube/zobtube/issues">issue section</a>.</p>
 <p><code>zobtube</code> is also available using Docker images, give it a try!</p>
-<pre tabindex="0"><code>docker run -it -p 8080:8080 ghcr.io/zobtube/zobtube:0.1.68
+<pre tabindex="0"><code>docker run -it -p 8080:8080 ghcr.io/zobtube/zobtube
 </code></pre>
                 </section>
             </article>
@@ -291,7 +291,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#f92672">media</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">path</span>: <span style="color:#e6db74">&#34;/var/lib/zobtube/data&#34;</span>
 </span></span></code></pre></div><p>Then run with the following docker command:</p>
-<pre tabindex="0"><code>docker run -v ./config.yml:/config.yml -v ./zt-test:/var/lib/zobtube --user 1000:1000 -p 8080:8080 ghcr.io/zobtube/zobtube:0.1.68
+<pre tabindex="0"><code>docker run -v ./config.yml:/config.yml -v ./zt-test:/var/lib/zobtube --user 1000:1000 -p 8080:8080 ghcr.io/zobtube/zobtube
 </code></pre>
                 </section>
             </article>

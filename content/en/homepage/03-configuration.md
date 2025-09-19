@@ -38,5 +38,5 @@ media:
 Then run with the following docker command:
 
 ```
-docker run -v ./config.yml:/config.yml -v ./zt-test:/var/lib/zobtube --user 1000:1000 -p 8080:8080 ghcr.io/zobtube/zobtube:0.1.68
+docker run -v ./config.yml:/config.yml -v ./zt-test:/var/lib/zobtube --user 1000:1000 -p 8080:8080 ghcr.io/zobtube/zobtube
 ```
