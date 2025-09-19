@@ -27,7 +27,8 @@ ZT_SERVER_BIND="127.0.0.1:8080" ZT_DB_DRIVER=sqlite ZT_DB_CONNSTRING=./db.sqlite
 `config.yml`:
 ```yaml
 ---
-bind: "0.0.0.0:8080"
+config:
+  bind: "0.0.0.0:8080"
 db:
   driver: "sqlite"
   connstring: "/var/lib/zobtube/zt.db"
