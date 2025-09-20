@@ -257,7 +257,7 @@
 <p>Those binaries are available on the <a href="https://github.com/zobtube/zobtube/releases/latest">Github release page</a>.</p>
 <p>If an architecture / operating system seems to be missing, feel free to request it on the <a href="https://github.com/zobtube/zobtube/issues">issue section</a>.</p>
 <p><code>zobtube</code> is also available using Docker images, give it a try!</p>
-<pre tabindex="0"><code>docker run -it -p 8080:8080 ghcr.io/zobtube/zobtube
+<pre tabindex="0"><code>docker run -it -p 8069:8069 ghcr.io/zobtube/zobtube
 </code></pre>
                 </section>
             </article>
@@ -280,19 +280,19 @@
 <p>Here are some basic configuration.</p>
 <h5 id="running-locally-with-environmental-variables">Running locally with environmental variables</h5>
 <p>On Linux and MacOS:</p>
-<pre tabindex="0"><code>ZT_SERVER_BIND=&#34;127.0.0.1:8080&#34; ZT_DB_DRIVER=sqlite ZT_DB_CONNSTRING=./db.sqlite ZT_MEDIA_PATH=./data ./zobtube
+<pre tabindex="0"><code>ZT_SERVER_BIND=&#34;127.0.0.1:8069&#34; ZT_DB_DRIVER=sqlite ZT_DB_CONNSTRING=./db.sqlite ZT_MEDIA_PATH=./data ./zobtube
 </code></pre><h5 id="running-in-docker-with-sqlite-with-configuration-file">Running in Docker with sqlite with configuration file</h5>
 <p><code>config.yml</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span><span style="color:#f92672">config</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">bind</span>: <span style="color:#e6db74">&#34;0.0.0.0:8080&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">bind</span>: <span style="color:#e6db74">&#34;0.0.0.0:8069&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">db</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">driver</span>: <span style="color:#e6db74">&#34;sqlite&#34;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">connstring</span>: <span style="color:#e6db74">&#34;/var/lib/zobtube/zt.db&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">media</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">path</span>: <span style="color:#e6db74">&#34;/var/lib/zobtube/data&#34;</span>
 </span></span></code></pre></div><p>Then run with the following docker command:</p>
-<pre tabindex="0"><code>docker run -v ./config.yml:/config.yml -v ./zt-test:/var/lib/zobtube --user 1000:1000 -p 8080:8080 ghcr.io/zobtube/zobtube
+<pre tabindex="0"><code>docker run -v ./config.yml:/config.yml -v ./zt-test:/var/lib/zobtube --user 1000:1000 -p 8069:8069 ghcr.io/zobtube/zobtube
 </code></pre>
                 </section>
             </article>

@@ -19,7 +19,7 @@ Here are some basic configuration.
 On Linux and MacOS:
 
 ```
-ZT_SERVER_BIND="127.0.0.1:8080" ZT_DB_DRIVER=sqlite ZT_DB_CONNSTRING=./db.sqlite ZT_MEDIA_PATH=./data ./zobtube
+ZT_SERVER_BIND="127.0.0.1:8069" ZT_DB_DRIVER=sqlite ZT_DB_CONNSTRING=./db.sqlite ZT_MEDIA_PATH=./data ./zobtube
 ```
 
 ##### Running in Docker with sqlite with configuration file
@@ -28,7 +28,7 @@ ZT_SERVER_BIND="127.0.0.1:8080" ZT_DB_DRIVER=sqlite ZT_DB_CONNSTRING=./db.sqlite
 ```yaml
 ---
 config:
-  bind: "0.0.0.0:8080"
+  bind: "0.0.0.0:8069"
 db:
   driver: "sqlite"
   connstring: "/var/lib/zobtube/zt.db"
@@ -39,5 +39,5 @@ media:
 Then run with the following docker command:
 
 ```
-docker run -v ./config.yml:/config.yml -v ./zt-test:/var/lib/zobtube --user 1000:1000 -p 8080:8080 ghcr.io/zobtube/zobtube
+docker run -v ./config.yml:/config.yml -v ./zt-test:/var/lib/zobtube --user 1000:1000 -p 8069:8069 ghcr.io/zobtube/zobtube
 ```
